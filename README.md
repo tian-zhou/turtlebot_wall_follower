@@ -1,18 +1,18 @@
 ## Descriptions
 
-1. Start Gazebo simulation envrioment by typing \
+1. Start Gazebo simulation envrioment by typing 
 	roslaunch turtlebot_gazebo turtlebot_world.launch
 
 2. The robot is equipped with a hokuyo on top. Facing front direction of the robot. 
  
 3. Drag the robot to a good start position using the GUI. Get familar with Gazebo view changes will help you a lot. Like using SHIFT and scroll up-down
 
-4. Launch all the F1-drive codes with \
+4. Launch all the F1-drive codes with 
 	roslaunch f1_drive f1_drive.launch
 	It will start three problems:
 	- car_brain.py
 	- lidar_read.py
-	- move_car.py  \
+	- move_car.py  
 	
 	For details of each problem, read the (commented) source code
 
