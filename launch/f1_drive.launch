@@ -1,0 +1,13 @@
+<launch>
+    
+    <!-- python script: read lidar to generate PID error -->
+    <node pkg="f1_drive" type="lidar_read.py" output="screen" name="lidar_read" />
+
+    <!-- python script: car_brain, generate PID control from error -->
+    <node pkg="f1_drive" type="car_brain.py" output="screen" name="car_brain" />
+    
+    <!-- python script: drive the car -->
+    <node pkg="f1_drive" type="move_car.py" output="screen" name="move_car" />
+    
+</launch>
+

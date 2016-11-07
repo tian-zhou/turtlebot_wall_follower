@@ -1,0 +1,15 @@
+<launch>	
+
+	<!-- Load a Map  -->
+	<arg name="map_file" default="$(find demo)/resources/map/hallway.yaml"/>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+	<node pkg="tf" type="static_transform_publisher" name="map_2_laser" args="0 0 0 0 0 0 /map /laser 100"/> 
+
+	<!-- Visualisation RVIZ -->
+	<node pkg="rviz" type="rviz" name="rviz" />
+
+	<!-- python script: fetch way points and display on map -->
+	<node pkg="demo" type="waypoint.py" output="screen" name="waypoint" />
+	
+</launch>
