@@ -28,3 +28,4 @@
 4. Be **very** careful with line 101 and 102 of lidar_read.py. These indexes need to be changed based on the placement of LIDAR on car. You need to know which ray in LIDAR corresponds to the right direction of car (and right ahead direction). You need to change based on different LIDAR placements. In turtlebot, the LIDAR is put upside down?, so the last value corresponds t o the right. Need to be careful! 
 
 5. In lidar_read.py, you can change theta, dis_rwall_T, and step_into_future. They are based on the UPenn video tutorial. Taa should be familiar with the meaning of these metrics.
+
